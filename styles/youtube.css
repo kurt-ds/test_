@@ -1,0 +1,127 @@
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+    .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.video-time {
+    background-color: black;
+    font-family: Roboto, Arial;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right:5px;
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 2px;
+}
+
+.video-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+
+.video-creator{
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.video-status {
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+}
+
+.profile-picture  {
+    width: 36px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px;
+}
+
+.channel-picture {
+    vertical-align: top;
+    margin-right: 1px;
+}
+
+.video-info {
+    flex: 1;
+    z-index: -10;
+}
+
+.profile-picture-container {
+    position: relative;
+}
+
+.channel-tooltip {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: white;
+    display: flex;
+    column-gap: 10px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 0 5px rgba(96, 96, 96, 0.5);
+    border-radius: 5px;
+    z-index: 200;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+}
+
+.channel-picture:hover .channel-tooltip {
+    opacity: 1;
+}
+
+.channel .profile-picture {
+    width: 48px;
+}
+
+.channel-info .video-creator {
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.subscribers  {
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+}

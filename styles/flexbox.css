@@ -1,0 +1,132 @@
+.exercise {
+    margin-bottom: 200px;
+}
+
+.thirteenA {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-item {
+    background-color: lightpink;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message {
+    background-color: black;
+    color: white;
+}
+
+.second-item {
+    background-color: lightblue;
+    height: 50px;
+    width: 200px;
+}
+
+.thirteenB {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-section {
+    width: 100px;
+    height: 50px;
+    background-color: lightpink;
+}
+
+.second-section {
+    width: 200px;
+    height: 50px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row2-message {
+    background-color: black;
+    color: white;
+}
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.inbox {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(96, 96, 96, 0.5);
+    width: 500px;
+    padding:  10px;
+    border-radius: 5px;
+    row-gap: 15px;
+}
+
+
+.all-inboxes{
+    font-family: Arial;
+    color: rgb(96, 96, 96);
+    font-weight: 12px;
+}
+
+.profile-infos {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.profile-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+    align-items: end;
+}
+
+.user-and-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user {
+    font-weight: bold;
+    font-family: arial;
+    font-size: 18px;
+}
+
+.time {
+    font-family: arial;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+}
+.profile-image {
+    width: 76px;
+    height: 76px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 38px;
+}
+
+.subject {
+    font-weight: bold;
+    font-family: arial;
+}
+
+.first-message {
+    font-family: arial;
+    color: rgb(96, 96, 96);
+}
+
