@@ -1,9 +1,15 @@
 body {
     background-color: #14171A;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 50px;
     height: 2000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    position: absolute;
+}
+
+main {
+    position: relative;
+    left: 200px;
+    right: 0;
 }
 
 .messages {
@@ -90,16 +96,11 @@ body {
 }
 
 .search-sidebar {
-    position: fixed;
-    right: 0;
-    top: 0;
-    bottom: -100px;
+    position: absolute;
     width: 200px;
     background-color: green;
-}
+    overflow-y: auto;
+    top: 0;
+    right: 0;
 
-
-.search-sidebar p {
-    position: absolute;
-    bottom: 200px;
 }
