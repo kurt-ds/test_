@@ -1,11 +1,105 @@
 body {
     background-color: #14171A;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    height: 2000px;
 }
 
 .messages {
     display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    background-color: #14171A;
+    padding-left: 10px;
 }
 
-.new-message-button {
-    mix-blend-mode: multiply;
+.icon-containers {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.message-name {
+    color: white;
+    font-family: Segoe UI;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.expand-button-container,
+.new-image-container {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.15s;
+}
+
+.expand-button-container:hover,
+.new-image-container:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.new-image-button {
+    filter: invert(100%);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.expand-button {
+    filter: invert(100%);
+    width: 25px;
+    cursor: pointer
+}
+
+
+
+.sidebar {
+    background-color: lightblue;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+}
+
+
+.header {
+    position: fixed;
+    left: 200px;
+    top: 0;
+    right: 200px;
+    height: 50px;
+    background-color: lightpink;
+    background-blend-mode: color-burn;
+}
+
+.search-sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: -100px;
+    width: 200px;
+    background-color: green;
+}
+
+
+.search-sidebar p {
+    position: absolute;
+    bottom: 200px;
 }
