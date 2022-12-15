@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ambagan Laboratory 5</title>
+    <style>
+        body {
+            height: 1000px;
+            margin: 0;
+            display: flex;
+            background-color: rgb(246, 246, 246);
+        }
+        .comment-suggestion {
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            background-color: white;
+            padding: 10px;
+            row-gap: 10px;
+            margin: 20px;
+            
+            }
+
+        .comment-suggestion h4 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        hr {
+            border: 0;
+            clear:both;
+            display:block;
+            width: 96%;               
+            background-color: gray;
+            height: 1px;
+        }
+
+        .input-buttons {
+            display: flex;
+            column-gap: 10px;
+        }
+
+        .input-buttons input {
+            background-color: pink;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="comment-suggestion">
+            <h4>Leave a Comment/s Suggestions</h4>
+            <div class="user-name">
+                Name: <input type="text" name="user_name">
+            </div>
+
+            <div class="sex-selection">
+                Sex: 
+                <input type="radio" name="option" value="male">Male
+                <input type="radio" name="option" value="female"> Female
+            </div>
+
+            <div class="gender">
+                Gender
+                <select name="dropdown">
+                    <option selected></option>
+                    <option value="feminine">Feminine</option>
+                    <option value="Masculine">Masculine</option>
+                    <option value="Lesbian">Lesbian</option>
+                    <option value="gay">Gay</option>
+                    <option value="bisexual">Bisexual</option>
+                    <option value="transgender">Transgender</option>
+                </select>
+            </div>
+
+            <div>
+                Comments <br>
+                    <textarea rows="5" cols="50" name="description" placeholder="enter commments here..."></textarea>
+            </div>
+
+            <div id="line"><hr></div>
+
+            <div class="input-buttons">
+                <input type="reset" name="reset" value="reset">
+                <input type="button" name="cancel" value="cancel">
+                <input type="submit" name="submit" value="submit">
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
