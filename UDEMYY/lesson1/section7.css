@@ -1,0 +1,22 @@
+body {
+    background-color: plum;
+}
+
+
+button {
+    font-size: 30px;
+}
+
+h1, h2 {
+    color: slateblue;
+}
+
+#signup {
+    background-color: black;
+    color: white;
+}
+
+#login {
+    background-color: green;
+    color: antiquewhite;
+}

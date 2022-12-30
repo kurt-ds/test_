@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hover Demo</title>
+    <style>
+      body {
+        background-color: #dab49d;
+        height: 50em;
+        position: relative;
+        text-align: center;
+      }
+      button {
+        background-color: #dab49d;
+        padding: 10px;
+        color: #5e3023;
+        border-color: #5e3023;
+        border-style: solid;
+        cursor: pointer;
+        position: absolute;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        top: 50%;
+        left: 50%;
+        transition: border-color 0.3s, color 0.3s, transform 0.3s,
+          box-shadow 0.3s, background-color 0.3s;
+      }
+
+      button:hover {
+        border-color: rgb(137, 87, 55);
+        color: white;
+        transform: translateY(-5px);
+        box-shadow: 0 0.5em 0.5em -0.4em rgba(137, 87, 55);
+        background-color: #c08552;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Hover Me!</button>
+  </body>
+</html>

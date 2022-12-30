@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    font-weight: 400;
+    text-decoration: #f79206 underline wavy;
+    letter-spacing: 15px;
+    font-size: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    text-align: right;
+    text-decoration: none;
+    line-height: 2;
+    
+}
+
+a {
+    text-decoration: none;
+}

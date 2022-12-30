@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions DEMO</title>
+    <style>
+        div {
+            background-color: gray;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        #first {
+            background-color: aquamarine;
+        }
+
+        #second {
+            background-color: bisque;
+        }
+
+        #third {
+            background-color: rgb(207, 133, 21);
+        }
+
+        #relative #second {
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+
+        #absolute {
+            position: relative;
+        }
+
+        #absolute #second {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        #fixed #second {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h2>POSITIONS Property</h2>
+    <section id="static">
+        <h2>STATIC</h2>
+        <div id="first"></div>
+        <div id="second"></div>
+        <div id="third"></div>
+    </section>
+
+    <section id="relative">
+        <h2>Relative</h2>
+        <div id="first"></div>
+        <div id="second"></div>
+        <div id="third"></div>
+    </section>
+
+    <section id="absolute">
+        <h2>Absolute</h2>
+        <div id="first"></div>
+        <div id="second"></div>
+        <div id="third"></div>
+    </section>
+
+    <section id="fixed">
+        <h2>Fixed</h2>
+        <div id="first"></div>
+        <div id="second"></div>
+        <div id="third"></div>
+    </section>
+</body>
+</html>
