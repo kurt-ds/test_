@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratory 6</title>
+    <style>
+    body {
+        background-color: #82f4ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #c1faff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+        
+      div {
+        border: 3px solid #4429bc;
+        display: inline-block;
+        border-radius: 8px;
+        padding: 5px;
+        background-color: #7383d5;
+        box-shadow: 0 0 20px #4429bc;
+      }
+      h1 {
+        text-align: center;
+        margin: 0;
+        color: #4429bc;
+      }
+
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid #4429bc;
+      }
+
+      thead th,
+      tfoot th {
+        background-color: #6757c5;
+      }
+
+      td {
+        background-color: #7aa9e4;
+        color: #4429bc;
+      }
+
+      table {
+        border-width: 2px;
+        background-color: #5843c1;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Stephen Rocillo</h1>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="5" rowspan="2">Working with table</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Column 1</td>
+            <td>Column 2</td>
+            <td>Column 3</td>
+            <td>Column 4</td>
+            <td>Column 5</td>
+          </tr>
+
+          <tr>
+            <td rowspan="2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+            <td rowspan="3">Row 1 Cell 4</td>
+            <td>Row 1 Cell 5</td>
+          </tr>
+
+          <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+            <td>Row 2 Cell 5</td>
+          </tr>
+
+          <tr>
+            <td>Row 3 Cell 1</td>
+            <td colspan="2">Row 3 Cell 2</td>
+            <td>Row 3 Cell 5</td>
+          </tr>
+
+          <tr>
+            <td colspan="3">Row 4 Cell 1</td>
+            <td colspan="2">Row 4 Cell 2</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="5">DCIT 21A - Introduction to Computing</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
